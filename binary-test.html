@@ -1,0 +1,34 @@
+<HTML>
+    <head>
+        <style>
+        body {
+            background-color: rgba(0,0,0);
+            background-repeat: no-repeat;
+        }
+        .binary {
+            opacity: 9%;
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+            background-position: center;
+            background-size: cover;
+            transform: scale(4)
+        }
+        .fade-in-image
+        {
+            animation: fadeIn 5s;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 100%; }
+        }
+    </style>
+    </head>
+    <body>
+        <title>Binary</title>
+        <div class="fade-in-image">
+        <!-- <div> -->
+            <img class="binary" src="images/binarycode.png">
+        </div>
+    </body>
+</HTML>

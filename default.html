@@ -13,6 +13,16 @@
                 object-fit: contain;
                 transform: scale(1.5)
             }
+            .fade-in-image
+            {
+                animation: fadeIn 3s;
+            }
+            @keyframes fadeIn
+            {
+                0% { opacity: 0; }
+                70% { opacity: 100%; }
+                100% { opacity: 70%; }
+            }
         </style>
     </head>
     <body>

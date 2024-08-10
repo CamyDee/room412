@@ -1,0 +1,50 @@
+.binary
+{
+    opacity: 9%;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    background-position: center;
+    background-size: cover;
+    transform: scale(5) rotate(1deg);
+}
+
+.fade-in-image
+{
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn
+{
+    0% { opacity: 0; }
+    100% { opacity: 100%; }
+}
+
+.roboto-mono-title
+{
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-size: 40;
+    font-weight:300;
+    font-style: normal;
+}
+
+.cover-image
+{
+    border-image: round;
+    border-width: 100px;
+    width: 700px;
+    height: auto;
+    align-content: center;
+    object-fit: fill;
+}
+
+.fosho-image
+{
+    border-image: round;
+    border-width: 100px;
+    width: 1000px;
+    height: auto;
+    align-content: center;
+    object-fit: fill;
+}

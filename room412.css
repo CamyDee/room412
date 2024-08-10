@@ -22,7 +22,17 @@
 {
     border-image: round;
     border-width: 100px;
-    width: 700px;
+    width: 500px;
+    height: auto;
+    align-content: center;
+    object-fit: fill;
+}
+
+.cover-image-3
+{
+    border-image: round;
+    border-width: 100px;
+    width: 1500px;
     height: auto;
     align-content: center;
     object-fit: fill;

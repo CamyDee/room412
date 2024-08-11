@@ -7,7 +7,7 @@
     object-fit: contain;
     background-position: center;
     background-size: cover;
-    transform: scale(5) rotate(1deg);
+    transform: scale(5.5) rotate(1deg);
 }
 
 .roboto-mono-title
@@ -43,22 +43,39 @@
 {
     border-image: round;
     border-width: 100px;
-    width: 1000px;
-    height: auto;
-    align-content: center;
+    height: 200px;
     object-fit: fill;
+}
+
+.sig-image
+{
+    position: relative;
+    float:bottom;
+    align-content: bottom center;
+}
+
+.sig-image:hover
+{
+    opacity:70%
 }
 
 .fade-in-image
 {
     animation: fadeIn 3s;
 }
+@keyframes fadeIn
+{
+    0% { opacity: 0; }
+    100% { opacity: 100%; }
+}
+
 .fade-in-image-delay
 {
-    animation: fadeIn 3s;
-    animation-delay: 5s;
+    animation: fadeInWithDelay 6s;
 }
-@keyframes fadeIn {
+@keyframes fadeInWithDelay
+{
     0% { opacity: 0; }
+    50% { opacity: 0; }
     100% { opacity: 100%; }
 }

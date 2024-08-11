@@ -8,11 +8,13 @@
             }
 
             .icarus {
+                position: absolute;
                 opacity: 67%;
                 height: 100%;
                 width: 100%;
                 object-fit: contain;
-                transform: scale(1.5)
+                transform: scale(1.5);
+                z-index: -1;
             }
 
             .fade-in-image
@@ -27,8 +29,9 @@
                 100% { opacity: 70%; }
             }
 
-            #hamburger-menu {
-                position: fixed;
+            .hamburger-menu
+            {
+                position: absolute;
                 top: 20px;
                 left: 20px;
                 width: 50px;
@@ -46,26 +49,75 @@
                     black 80%, black 100%
                 );
             }
+
+            .hamburger-menu:hover
+            {
+                background: linear-gradient(
+                    to bottom, 
+                    black, black 10%,
+                    gray 10%, gray 20%,
+                    black 20%, black 40%,
+                    gray 40%, gray 50%,
+                    black 50%, black 70%, 
+                    gray 70%, gray 80%,
+                    black 80%, black 100%
+                    );
+            }
+
+            .dropdown
+            {
+                position: absolute;
+                display: inline-block;
+            }
+
+            .dropdown-content 
+            {
+                display: none;
+                position: absolute;
+                left: 10px;
+                top: 10px;
+                background-color: darkgray;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+
+            .dropdown-content a {
+                color: white;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+            .dropdown-content a:hover {background-color: #ddd;}
+
+            /* Show the dropdown menu on hover */
+            .dropdown:hover .dropdown-content {display: block;}
+
+            /* Change the background color of the dropdown button when the dropdown content is shown */
+            .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
         </style>
     </head>
     <body>
-        <title>Icarus</title>
+        <title>Room 421</title>
+        <div class="fade-in-image">
+        <!-- <div> -->
+            <img class="binary" src="images/binarycode.png">
+        </div>
         <div class="fade-in-image">
             <img class="icarus" src="images/icarus-1024x1024.png">
         </div>
-        <div class="absolute">
-            <label id="hamburger-menu" for="hamburger-input">
-                <nav id="sidebar-menu">
-                  <h3>Menu</h3>
-                  <ul>
-                    <li><a href=".">Room421</a></li>
+        <div class="absolute dropdown">
+            <button class="dropbtn hamburger-menu" > </button>
+            <div class="dropdown-content">
+                <ul class="dropdown-content">
                     <li><a href="cover-art.html">.&nbsp;COvER_.ART__</a></li>
                     <li><a href="logo-design.html">LO.GO__dES1GN..</a></li>
                     <li><a href="surrealism.html">SU._RREAL1SM.__</a></li>
                     <li><a href="about-me.html">M3</a></li>
-                  </ul>
-                </nav>
-            </label>
+                </ul>
+            </div>
         </div>
     </body>
 </HTML>

@@ -46,17 +46,20 @@
 
 .fosho-image
 {
-    border-image: round;
-    border-width: 100px;
-    height: 200px;
-    object-fit: fill;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
 .sig-image
 {
     position: relative;
-    float:bottom;
-    align-content: bottom center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
 }
 
 .sig-image:hover

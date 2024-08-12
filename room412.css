@@ -140,6 +140,11 @@
     100% { opacity: 100%; }
 }
 
+.fade-in-image-delay-long
+{
+    animation: fadeInWithDelay 5s;
+}
+
 .fade-in-image-delay
 {
     animation: fadeInWithDelay 3s;
